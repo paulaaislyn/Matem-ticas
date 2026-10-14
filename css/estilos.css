@@ -1,0 +1,44 @@
+/* CSS básico: menos de 100 líneas */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #ffb2d1; color: #563047; line-height: 1.6; }
+a { color: #b42b78; }
+header { background: #ed55aa; color: white; padding: 20px 4%; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+.logo { color: white; font-size: 1.4rem; font-weight: bold; text-decoration: none; }
+nav a { color: white; text-decoration: none; margin: 0 5px; }
+nav a:hover { text-decoration: underline; }
+.portada { padding: 50px 5%; min-height: 500px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
+h1 { font-size: clamp(2.3rem, 5vw, 4rem); line-height: 1.1; color: white; }
+h2 { color: #9e2d6b; }
+.redonda { width: 100%; max-width: 430px; aspect-ratio: 1; object-fit: cover; border-radius: 50%; background: #ffe5ef; justify-self: center; }
+.boton { display: inline-block; background: #e8439b; color: white; border: 0; border-radius: 25px; padding: 10px 22px; margin: 12px 8px 0 0; text-decoration: none; font-weight: bold; cursor: pointer; }
+.boton:hover { background: #c92d83; }
+.claro { background: white; color: #b42b78; }
+.secundario { background: #875b79; }
+.blanco, .formulario { background: #fffafd; padding: 30px 5%; margin: 2px 0; }
+.tarjetas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.tarjetas article { background: white; border: 1px solid #f2c4da; border-radius: 14px; padding: 20px; }
+.franja { padding: 35px 5%; background: #ef78b6; color: white; }
+.franja h2 { color: white; }
+footer { background: #d94196; color: white; padding: 22px 5%; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+footer a { color: white; }
+.pagina { padding-bottom: 35px; }
+.titulo { text-align: center; padding: 35px 5%; }
+.titulo h1 { margin-bottom: 10px; }
+.titulo p { color: #563047; }
+.tabla { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: white; }
+th, td { padding: 12px; border: 1px solid #edb6d0; text-align: left; }
+th { background: #ed55aa; color: white; }
+.imagen { width: 100%; max-width: 500px; display: block; margin-top: 20px; border-radius: 12px; }
+.galeria { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.galeria figure { margin: 0; }
+.galeria img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 12px; background: #ffe5ef; }
+figcaption { font-size: .9rem; }
+.multimedia { display: block; width: 100%; max-width: 800px; margin: 18px 0; }
+.formulario { max-width: 760px; margin: 0 auto 30px; border-radius: 15px; }
+input[type="text"] { width: 100%; padding: 10px; border: 1px solid #d99ab9; border-radius: 8px; margin: 8px 0 18px; }
+fieldset { border: 1px solid #e8b6cf; border-radius: 10px; margin: 18px 0; padding: 15px; }
+legend { font-weight: bold; }
+.opcion { display: inline-block; margin: 8px 14px 5px 0; }
+#resultado { margin-top: 20px; }
+@media (max-width: 700px) { .portada, .tarjetas, .galeria { grid-template-columns: 1fr; } .portada { text-align: center; } .redonda { max-width: 300px; } header { justify-content: center; text-align: center; } footer { display: block; } }
